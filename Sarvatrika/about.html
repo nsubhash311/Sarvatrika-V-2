@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description"
+          content="BizBite corporate business template or agency and marketing template helps you easily create websites for your business.">
+    <meta name="author" content="ThemeTags">
+
+    <meta property="og:site_name" content=""/> <!-- website name -->
+    <meta property="og:site" content=""/> <!-- website link -->
+    <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content=""/> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content=""/> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content=""/> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article"/>
+
+    <!--title-->
+    <title>Sarvatrika</title>
+
+    <!--favicn icon-->
+    <link rel="icon" href="{{ url_for('static', filename='/assets/img/favicn.png')}}" type="image/png" sizes="16x16">
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&amp;display=swap" rel="stylesheet">
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/bootstrap.min.css')}}">
+    <!--Magnific popup css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/magnific-popup.css')}}">
+    <!--Themify icon css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/themify-icons.css')}}">
+    <!--Fontawesome icon css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/all.min.css')}}">
+    <!--animated css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/animate.min.css')}}">
+    <!--ytplayer css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/jquery.mb.YTPlayer.min.css')}}">
+    <!--Owl carousel css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/owl.theme.default.min.css')}}">
+    <!--custom css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/style.css')}}">
+    <!--responsive css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/responsive.css')}}">
+
+</head>
+<body>
+
+<!--loader start-->
+<div id="preloader">
+    <div class="loader1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!--loader end-->
+
+<!--header section start-->
+<header class="header">
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('home')}}">
+                <img src="{{ url_for('static', filename='/assets/img/logo-white.png')}}" alt="logo" class="img-fluid" width="200" height="60" style="margin-left: 65px;"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ti-menu"></span>
+            </button>
+             <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto menu">
+                    <li><a href="{{ url_for('home')}}" > Home</a></li>
+                    <li><a  href="{{ url_for('about')}}">About Us</a></li>
+                    <li><a  href="{{ url_for('services')}}">Services</a></li>
+                    <li><a  href="{{ url_for('contact')}}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--header section end-->
+
+<!--body content wrap start-->
+<div class="main">
+    <section class="hero-section ptb-100 gradient-overlay"
+             style="background: url('img/header-bg-5.jpg')no-repeat center center / cover">
+        <div class="hero-bottom-shape-two" style="background: url('img/hero-bottom-shape.svg')no-repeat bottom center"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-7">
+                    <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
+                        <h1 class="text-white mb-0">About Us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--header section end-->
+
+    <!--project details section start-->
+    <section class="project-details-section ptb-100">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-12 col-lg-8">
+                    <div class="img-wrap mb-md-4 mb-lg-0">
+                        <img src="{{ url_for('static', filename='/assets/img/project-details.jpg')}}" alt="project" class="img-fluid rounded shadow-sm"/>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="project-details-sidebar">
+                        <ul class="project-info-list">
+                            <li class="d-flex align-items-center mb-3 p-4 rounded">
+                                <span class="ti-user icon-sm color-secondary d-block mr-3"></span>
+                                <div class="d-block">
+                                    <h5 class="mb-0">Name</h5>
+                                    <p>Sarvatrika</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-3 p-4 rounded">
+                                <span class="ti-time icon-sm color-secondary d-block mr-3"></span>
+                                <div class="d-block">
+                                    <h5 class="mb-0">Domain</h5>
+                                    <p>Machine Learning</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-3 p-4 rounded">
+                                <span class="ti-link icon-sm color-secondary d-block mr-3"></span>
+                                <div class="d-block">
+                                    <h5 class="mb-0">Theme</h5>
+                                    <a href="#">Prediction</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--project details row start-->
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="project-details-content">
+                        <h5>Project Description</h5>
+                        <p>Machine Learning models are capable of processing huge amounts of data. As the amount and type of data varies, the algorithms will also vary.
+                             Algorithm selection is a manual and tedious task.
+                             Our motto is to give an universal solution for uneducated people who can easily use it. We also provide user friendly and simple steps to predict.</p>
+                        <p>Each and every prediction is dependent on the dataset. Thus no constant algorithm is used.
+                            As of now, the algorithms are chosen after analysing the datasets.</p>
+                        <p>Since it is a tedious process here we introduce a universal prediction named as Sarvatrika which analyzes the dataset and chooses a perfect machine learning prediction algorithm.
+                            This idea of introducing a universal prediction method is called Sarvatrika.</p>
+                    </div>
+                </div>
+            </div>
+                <!--promo block with hover effect start-->
+    <section class="promo-block ptb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <div class="single-promo-block promo-hover-bg-1 hover-image shadow-lg p-5 rounded">
+                        <img class="mb-3" width="100" src="{{ url_for('static', filename='/assets/img/promo-img-1.svg')}}" >
+                        <div class="promo-block-content">
+                            <h5>Universal</h5>
+                            <p>It deals with all kinds of dataset and works as a universal solution for all data.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="single-promo-block promo-hover-bg-2 hover-image shadow-lg p-5 rounded">
+                        <img src="{{ url_for('static', filename='/assets/img/promo-img-2.svg')}}" alt="promo" class="mb-3" width="100">
+                        <div class="promo-block-content">
+                            <h5>Automation</h5>
+                            <p>It cleans the dataset and perform Pre-processing by automation even when the dataset is in millions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="single-promo-block promo-hover-bg-3 hover-image shadow-lg p-5 rounded">
+                        <img src="{{ url_for('static', filename='/assets/img/promo-img-3.svg')}}" alt="promo" class="mb-3" width="100">
+                        <div class="promo-block-content">
+                            <h5>Prediction</h5>
+                            <p>It analyzes the dataset and chooses a perfect machine learning algorithm  which predicts values.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--promo block with hover effect end-->
+            
+            <!--project details row end-->
+        </div>
+    </section>
+    <!--project details section end-->
+
+
+
+
+</div>
+<!--body content wrap end-->
+
+<!--footer section start-->
+<footer class="footer-section">
+    <!--footer top start-->
+    <div class="footer-top gradient-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row footer-top-wrap">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-nav-wrap text-white">
+                                <h4 class="text-white">QUICK LINKS</h4>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('home')}}">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"  href="{{ url_for('about')}}">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('services')}}">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('contact')}}">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-nav-wrap text-white">
+                                <h4 class="text-white">DOMAIN</h4>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Artificial Intelligence</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Machine Learning</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Regression</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Prediction</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-nav-wrap text-white">
+                                <h4 class="text-white">FEATURES</h4>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Automation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Universal</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Prediction</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">User-friendly</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-nav-wrap text-white">
+                                <h4 class="text-white">SUPPORT</h4>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Knowledge Base</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Forums</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">System Status</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row footer-top-wrap">
+                        <div class="col-12">
+                            <div class="footer-nav-wrap text-white">
+                                <h4 class="text-white">GET IN TOUCH</h4>
+                                <ul class="get-in-touch-list">
+                                    <li class="d-flex align-items-center py-2"><span class="fas fa-map-marker-alt mr-2"></span>SMVEC, Puducherry, 605107</li>
+                                    <li class="d-flex align-items-center py-2"><span class="fas fa-envelope mr-2"></span> cplokes@gmail.com</li>
+                                    <li class="d-flex align-items-center py-2"><span class="fas fa-phone-alt mr-2"></span> +91 9994425915 </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer top end-->
+
+    <!--footer copyright start-->
+    <div class="footer-bottom gray-light-bg py-2">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-5 col-lg-5">
+                    <p class="copyright-text pb-0 mb-0">Copyrights © 2021. All
+                        rights reserved by
+                        <a href="#" target="_blank">Sarvatrika</a></p>
+                </div>
+                <div class="col-md-7 col-lg-6 d-none d-md-block d-lg-block">
+                    <div class="social-nav text-right">
+                        <ul class="list-unstyled social-list mb-0">
+                            <li class="list-inline-item tooltip-hover">
+                                <a href="#" class="rounded"><span class="ti-facebook"></span></a>
+                                <div class="tooltip-item">Facebook</div>
+                            </li>
+                            <li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-twitter"></span></a>
+                                <div class="tooltip-item">Twitter</div>
+                            </li>
+                            <li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-linkedin"></span></a>
+                                <div class="tooltip-item">Linkedin</div>
+                            </li>
+                            <li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-dribbble"></span></a>
+                                <div class="tooltip-item">Dribbble</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer copyright end-->
+</footer>
+<!--footer section end-->
+
+
+<!--bottom to top button start-->
+<button class="scroll-top scroll-to-target" data-target="html">
+    <span class="ti-angle-up"></span>
+</button>
+<!--bottom to top button end-->
+
+<!--jQuery-->
+<script src="{{ url_for('static', filename='/assets/js/jquery-3.4.1.min.js')}}"></script>
+<!--Popper js-->
+<script src="{{ url_for('static', filename='/assets/js/popper.min.js')}}"></script>
+<!--Bootstrap js-->
+<script src="{{ url_for('static', filename='/assets/js/bootstrap.min.js')}}"></script>
+<!--Magnific popup js-->
+<script src="{{ url_for('static', filename='/assets/js/jquery.magnific-popup.min.js')}}"></script>
+<!--jquery easing js-->
+<script src="{{ url_for('static', filename='/assets/js/jquery.easing.min.js')}}"></script>
+<!--jquery ytplayer js-->
+<script src="{{ url_for('static', filename='/assets/js/jquery.mb.YTPlayer.min.js')}}"></script>
+<!--Isotope filter js-->
+<script src="{{ url_for('static', filename='/assets/js/mixitup.min.js')}}"></script>
+<!--wow js-->
+<script src="{{ url_for('static', filename='/assets/js/wow.min.js')}}"></script>
+<!--owl carousel js-->
+<script src="{{ url_for('static', filename='/assets/js/owl.carousel.min.js')}}"></script>
+<!--countdown js-->
+<script src="{{ url_for('static', filename='/assets/js/jquery.countdown.min.js')}}"></script>
+<!--custom js-->
+<script src="{{ url_for('static', filename='/assets/js/scripts.js')}}"></script>
+</body>
+
+<!-- Mirrored from datrics.themetags.com/project-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Mar 2021 05:42:36 GMT -->
+</html>

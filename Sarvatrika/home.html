@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from datrics.themetags.com/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Mar 2021 05:42:09 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta description -->
+    <meta name="description"
+          content="BizBite corporate business template or agency and marketing template helps you easily create websites for your business.">
+    <meta name="author" content="ThemeTags">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content=""/> <!-- website name -->
+    <meta property="og:site" content=""/> <!-- website link -->
+    <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content=""/> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content=""/> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content=""/> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article"/>
+
+    <!--title-->
+    <title>Sarvatrika</title>
+
+    <!--favicn icon-->
+    <link rel="icon" href="{{ url_for('static', filename='/assets/img/favicn.png')}}" type="image/png" sizes="16x16">
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&amp;display=swap" rel="stylesheet">
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/bootstrap.min.css')}}">
+    <!--Magnific popup css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/magnific-popup.css')}}">
+    <!--Themify icon css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/themify-icons.css')}}">
+    <!--Fontawesome icon css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/all.min.css')}}">
+    <!--animated css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/animate.min.css')}}">
+    <!--ytplayer css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/jquery.mb.YTPlayer.min.css')}}">
+    <!--Owl carousel css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/owl.theme.default.min.css')}}">
+    <!--custom css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/style.css')}}">
+    <!--responsive css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/responsive.css')}}">
+
+</head>
+<body>
+
+<!--loader start-->
+<div id="preloader">
+    <div class="loader1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!--loader end-->
+
+<!--header section start-->
+<header class="header">
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('home')}}">
+                <img src="{{ url_for('static', filename='/assets/img/logo-white.png')}}" alt="logo" class="img-fluid" width="200" height="60" style="margin-left: 65px;"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ti-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto menu">
+                    <li><a href="{{ url_for('home')}}" > Home</a></li>
+                    <li><a  href="{{ url_for('about')}}">About Us</a></li>
+                    <li><a  href="{{ url_for('services')}}">Services</a></li>
+                    <li><a  href="{{ url_for('contact')}}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--header section end-->
+
+<!--body content wrap start-->
+<div class="main">
+    <!--hero section start-->
+    <section class="hero-equal-height pt-165 pb-100 gradient-bg">
+        <img src="{{ url_for('static', filename='/assets/img/grop-shape-3.svg')}}" alt="group shape" class="group-shape-1">
+        <img src="{{ url_for('static', filename='/assets/img/grop-shape-2.svg')}}" alt="group shape" class="group-shape-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-6">
+                    <div class="hero-slider-content text-white z-index position-relative">
+                        <h1 class="text-white">Sarvatrika</h1>
+                        <p class="lead">In Sarvatrika, all kinds of datasets can be predicted since we provide an universal prediction algorithm.</p>
+
+                        <div class="action-btns mt-3" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            <a href="#" class="btn accent-solid-btn">Predict</a>
+                        </div>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Inputs</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form action="fetch" method="POST">
+                                    <div class="upload-btn-wrapper">
+                                      <button class="btnn">Upload dataset</button>
+                                      <input type="file" name="csvfile" />
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btnn" data-dismiss="modal">Close</button>
+                                  <button type="submit" value="submit" class="btnn">Next</button>
+                                </div>
+                              </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="hero-animation-img">
+                        <!-- <img src="{{ url_for('static', filename='/assets/img/hero-animation-01.svg')}}" alt="hero" class="img-fluid d-none d-lg-block animation-two" width="150"> -->
+
+                        <img src="{{ url_for('static', filename='/assets/img/hero-single-img-1.svg')}}" alt="hero" class="animation-one" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{{ url_for('static', filename='/assets/img/combined-shape.svg')}}" alt="s" class="shape-img-2">
+    </section>
+    <!--hero section end-->
+
+    <!--promo section start-->
+    <section class="promo-block ptb-100">
+        <div class="container">
+            <div class="row justify-content-around justify-content-center">
+                <div class="col-md-6 col-lg-4  dot-bg-shape dot-bg-1">
+                    <div class="single-promo-block promo-hover-bg-1 hover-image p-5 text-center box-1 rounded">
+                        <div class="promo-block-icon mb-3">
+                            <span class="fab fa-superpowers icon-md color-primary"></span>
+                        </div>
+                        <div class="promo-block-content">
+                            <h5>Prediction</h5>
+                            <p>Sarvatrika focuses on the development of algorithms that can  predict the best suitable algorithm.</p>
+                            <a href="#" class="btn accent-solid-btn mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4  dot-bg-shape dot-bg-2">
+                    <div class="single-promo-block promo-hover-bg-2 hover-image p-5 text-center box-1 rounded">
+                        <div class="promo-block-icon mb-3">
+                            <span class="far fa-user icon-md color-primary"></span>
+                        </div>
+                        <div class="promo-block-content">
+                            <h5>User-friendly</h5>
+                            <p>Sarvatrika provides automation for choosing algorithms which would be useful for uneducated people.</p>
+
+                            <a href="#" class="btn accent-solid-btn mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4  dot-bg-shape dot-bg-3">
+                    <div class="single-promo-block promo-hover-bg-3 hover-image p-5 text-center box-1 rounded">
+                        <div class="promo-block-icon mb-3">
+                            <span class="far fa-clock icon-md color-primary"></span>
+                        </div>
+                        <div class="promo-block-content">
+                            <h5>Time saving</h5>
+                            <p>Machine learning generally requires a lot of time for choosing algorithms, but Sarvatrika saves time.</p>
+
+                            <a href="#" class="btn accent-solid-btn mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--promo section end-->
+
+    
+</div>
+<!--body content wrap end-->
+
+
+<!--footer section start-->
+<footer class="footer-section">
+    <!--footer top start-->
+    <div class="footer-top gradient-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row footer-top-wrap">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-nav-wrap text-white">
+                                <h4 class="text-white">QUICK LINKS</h4>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('home')}}">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"  href="{{ url_for('about')}}">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('services')}}">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('contact')}}">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-nav-wrap text-white">
+                                <h4 class="text-white">DOMAIN</h4>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Artificial Intelligence</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Machine Learning</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Regression</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Prediction</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-nav-wrap text-white">
+                                <h4 class="text-white">FEATURES</h4>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Automation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Universal</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Prediction</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">User-friendly</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-nav-wrap text-white">
+                                <h4 class="text-white">SUPPORT</h4>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Knowledge Base</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Forums</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">System Status</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row footer-top-wrap">
+                        <div class="col-12">
+                            <div class="footer-nav-wrap text-white">
+                                <h4 class="text-white">GET IN TOUCH</h4>
+                                <ul class="get-in-touch-list">
+                                    <li class="d-flex align-items-center py-2"><span class="fas fa-map-marker-alt mr-2"></span>SMVEC, Puducherry, 605107</li>
+                                    <li class="d-flex align-items-center py-2"><span class="fas fa-envelope mr-2"></span> cplokes@gmail.com</li>
+                                    <li class="d-flex align-items-center py-2"><span class="fas fa-phone-alt mr-2"></span> +91 9994425915 </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer top end-->
+
+    <!--footer copyright start-->
+    <div class="footer-bottom gray-light-bg py-2">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-5 col-lg-5">
+                    <p class="copyright-text pb-0 mb-0">Copyrights © 2021. All
+                        rights reserved by
+                        <a href="#" target="_blank">Sarvatrika</a></p>
+                </div>
+                <div class="col-md-7 col-lg-6 d-none d-md-block d-lg-block">
+                    <div class="social-nav text-right">
+                        <ul class="list-unstyled social-list mb-0">
+                            <li class="list-inline-item tooltip-hover">
+                                <a href="#" class="rounded"><span class="ti-facebook"></span></a>
+                                <div class="tooltip-item">Facebook</div>
+                            </li>
+                            <li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-twitter"></span></a>
+                                <div class="tooltip-item">Twitter</div>
+                            </li>
+                            <li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-linkedin"></span></a>
+                                <div class="tooltip-item">Linkedin</div>
+                            </li>
+                            <li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-dribbble"></span></a>
+                                <div class="tooltip-item">Dribbble</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer copyright end-->
+</footer>
+<!--footer section end-->
+
+<!--bottom to top button start-->
+<button class="scroll-top scroll-to-target" data-target="html">
+    <span class="ti-angle-up"></span>
+</button>
+<!--bottom to top button end-->
+<style>
+    .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btnn {
+    color:white;
+    cursor: pointer;
+    background-color: #ec4683;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  </style>
+
+<!--jQuery-->
+<script src="{{ url_for('static', filename='/assets/js/jquery-3.4.1.min.js')}}"></script>
+<!--Popper js-->
+<script src="{{ url_for('static', filename='/assets/js/popper.min.js')}}"></script>
+<!--Bootstrap js-->
+<script src="{{ url_for('static', filename='/assets/js/bootstrap.min.js')}}"></script>
+<!--Magnific popup js-->
+<script src="{{ url_for('static', filename='/assets/js/jquery.magnific-popup.min.js')}}"></script>
+<!--jquery easing js-->
+<script src="{{ url_for('static', filename='/assets/js/jquery.easing.min.js')}}"></script>
+<!--jquery ytplayer js-->
+<script src="{{ url_for('static', filename='/assets/js/jquery.mb.YTPlayer.min.js')}}"></script>
+<!--Isotope filter js-->
+<script src="{{ url_for('static', filename='/assets/js/mixitup.min.js')}}"></script>
+<!--wow js-->
+<script src="{{ url_for('static', filename='/assets/js/wow.min.js')}}"></script>
+<!--owl carousel js-->
+<script src="{{ url_for('static', filename='/assets/js/owl.carousel.min.js')}}"></script>
+<!--countdown js-->
+<script src="{{ url_for('static', filename='/assets/js/jquery.countdown.min.js')}}"></script>
+<!--custom js-->
+<script src="{{ url_for('static', filename='/assets/js/scripts.js')}}"></script>
+</body>
+
+<!-- Mirrored from datrics.themetags.com/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Mar 2021 05:42:17 GMT -->
+</html>
